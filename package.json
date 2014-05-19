@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "shoelace-ui-user-select": "git+https://github.com/shoelace-ui/user-select.git",
     "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git",
     "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
     "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git"

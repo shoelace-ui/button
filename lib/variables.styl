@@ -16,14 +16,40 @@ button--selector-prefix ?= "button"
 button--selector-hover  ?= "hover"
 button--selector-active ?= "active"
 
-button--default-color        ?= #656
-button--default-bg           ?= #fff
-button--default-border-color ?= #777
+/**
+ * Button type variables
+ *
+ * Types:
+ *
+ *   - default
+ *   - transparent
+ *   - primary
+ *   - warning
+ *   - danger
+ *   - success
+ *
+ */
 
-button--transparent-color        ?= #fff
-button--transparent-bg           ?= orange
+button--default-color            ?= #656
+button--default-bg               ?= #fff
+button--default-border-color     ?= #777
+
+button--transparent-color        ?= #656
+button--transparent-bg           ?= transparent
 button--transparent-border-color ?= transparent
 
-button--primary-color        ?= #fff
-button--primary-bg           ?= orange
-button--primary-border-color ?= darken(button--primary-color, 10%)
+button--primary-color            ?= #fff
+button--primary-bg               ?= blue
+button--primary-border-color     ?= darken(button--primary-bg, 10%)
+
+button--warning-color            ?= #fff
+button--warning-bg               ?= orange
+button--warning-border-color     ?= darken(button--warning-bg, 10%)
+
+button--danger-color             ?= #fff
+button--danger-bg                ?= red
+button--danger-border-color      ?= darken(button--danger-bg, 10%)
+
+button--success-color            ?= #fff
+button--success-bg               ?= green
+button--success-border-color     ?= darken(button--success-bg, 10%)
