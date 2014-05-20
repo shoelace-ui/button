@@ -55,8 +55,8 @@ $button--generic
  * @param {Color} text-color
  * @param {Color} bg-color
  * @param {Color} border-color
- * @type mixin
- * @api public
+ * @mixin
+ * @public
  */
 
 button--constructor(name, text-color, bg-color, border-color)
@@ -72,3 +72,5 @@ button--constructor(name, text-color, bg-color, border-color)
     &:focus
 
       color text-color
+      if bg-color isnt transparent
+        background lighten(bg-color, 10%)
