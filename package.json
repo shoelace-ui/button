@@ -1,6 +1,6 @@
 {
   "name": "shoelace-ui-button",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Default button styles",
   "repository": "https://github.com/shoelace-ui/button.git",
   "keywords": ["shoelace", "buttons", "button"],
