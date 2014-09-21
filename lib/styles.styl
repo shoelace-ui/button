@@ -9,7 +9,7 @@
  * Apply `button` default styles.
  */
 
-[class^={button--selector-prefix}]
+{'[class^=' + button--selector-prefix + ']'}
   @extend $button--generic
 
 button--constructor('default',     button--default-color,     button--default-bg,     button--default-border-color)

@@ -1,6 +1,6 @@
 {
   "name": "shoelace-ui-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Default button styles",
   "repository": "https://github.com/shoelace-ui/button.git",
   "keywords": ["shoelace", "buttons", "button"],
@@ -11,10 +11,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "shoelace-ui-colors": "git+https://github.com/shoelace-ui/colors.git",
+    "shoelace-ui-colors": "^0.1.0",
     "shoelace-ui-user-select": "git+https://github.com/shoelace-ui/user-select.git",
-    "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git",
-    "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
-    "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git"
+    "shoelace-ui-line-height": "^0.1.0",
+    "shoelace-ui-font-size": "^0.1.0",
+    "shoelace-ui-padding": "^0.1.0"
   }
 }
