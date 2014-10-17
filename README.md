@@ -1,9 +1,13 @@
-# button
+# shoelace-ui-button
 
-Default button styles.
+Default button styles
 
 ## Usage
 
-```stylus
-@require 'button'
-```
+  ```stylus
+  @require 'shoelace-ui-button'
+  ```
+
+## License
+
+MIT

@@ -3,7 +3,11 @@
   "version": "0.1.1",
   "description": "Default button styles",
   "repository": "https://github.com/shoelace-ui/button.git",
-  "keywords": ["shoelace", "buttons", "button"],
+  "keywords": [
+    "shoelace",
+    "buttons",
+    "button"
+  ],
   "author": "Michael Andrew Vanasse <mail@mndvns.com>",
   "devDependencies": {
     "serve": "^1.4.0",
@@ -11,10 +15,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "shoelace-ui-colors": "^0.1.0",
-    "shoelace-ui-user-select": "git+https://github.com/shoelace-ui/user-select.git",
-    "shoelace-ui-line-height": "^0.1.0",
+    "shoelace-ui-user-select": "^0.1.0",
+    "shoelace-ui-line-height": "^0.1.1",
     "shoelace-ui-font-size": "^0.1.0",
-    "shoelace-ui-padding": "^0.1.0"
+    "shoelace-ui-padding": "^0.1.2",
+    "shoelace-ui-colors": "^0.1.0"
   }
 }
