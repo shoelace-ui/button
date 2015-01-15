@@ -9,12 +9,28 @@
  * Apply `button` default styles.
  */
 
-[class^={button--selector-prefix}]
-  @extend $button--generic
+if button--apply-generic-selector-prefix
+  {'[class^=' + button--selector-prefix + ']'}
+    @extend $button--generic
 
-button--constructor('default',     button--default-color,     button--default-bg,     button--default-border-color)
-button--constructor('transparent', button--transparent-color, button--transparent-bg, button--transparent-border-color)
-button--constructor('primary',     button--primary-color,     button--primary-bg,     button--primary-border-color)
-button--constructor('warning',     button--warning-color,     button--warning-bg,     button--warning-border-color)
-button--constructor('danger',      button--danger-color,      button--danger-bg,      button--danger-border-color)
-button--constructor('success',     button--success-color,     button--success-bg,     button--success-border-color)
+if button--apply-default
+  button--constructor('default',     button--default-color,     button--default-bg,     button--default-border-color)
+if button--apply-transparent
+  button--constructor('transparent', button--transparent-color, button--transparent-bg, button--transparent-border-color)
+if button--apply-primary
+  button--constructor('primary',     button--primary-color,     button--primary-bg,     button--primary-border-color)
+if button--apply-warning
+  button--constructor('warning',     button--warning-color,     button--warning-bg,     button--warning-border-color)
+if button--apply-danger
+  button--constructor('danger',      button--danger-color,      button--danger-bg,      button--danger-border-color)
+if button--apply-success
+  button--constructor('success',     button--success-color,     button--success-bg,     button--success-border-color)
+
+/**
+ * Define `button` extend shorthand mixin
+ */
+
+button(name = false)
+  @extends $button--generic
+  if name isnt false
+    @extend $button-{name}

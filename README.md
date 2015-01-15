@@ -1,9 +1,24 @@
-# button
+# shoelace-ui-button
 
-Default button styles.
+  Button contructors, variables, and styles.
 
 ## Usage
 
 ```stylus
-@require 'button'
+@require 'shoelace-ui-button'
+
+// `button` mixin example
+
+.btn
+  button default
+
+// opt out of defaults
+
+button--placeholders-only = true
+button--apply-generic-selector-prefix ?= true
+
 ```
+
+## License
+
+MIT

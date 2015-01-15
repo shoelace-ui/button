@@ -16,14 +16,17 @@ button--font-family ?= inherit
 button--font-weight ?= 400
 button--line-height ?= line-height--base
 
-button--padding-vertical   ?= padding--base-vertical
-button--padding-horizontal ?= padding--base-horizontal
+button--padding-y ?= padding--base
+button--padding-x ?= padding--extra-large
 
-button--border-radius   ?= 3px
+button--border-radius   ?= 5px
 
 button--selector-prefix ?= "button"
 button--selector-hover  ?= "hover"
 button--selector-active ?= "active"
+
+button--apply-generic-selector-prefix ?= true
+button--placeholders-only ?= false
 
 /**
  * Button type variables
@@ -39,9 +42,17 @@ button--selector-active ?= "active"
  *
  */
 
+button--apply-all         ?= true
+button--apply-default     ?= button--apply-all isnt false
+button--apply-transparent ?= button--apply-all isnt false
+button--apply-primary     ?= button--apply-all isnt false
+button--apply-warning     ?= button--apply-all isnt false
+button--apply-danger      ?= button--apply-all isnt false
+button--apply-success     ?= button--apply-all isnt false
+
 button--default-color            ?= #656
-button--default-bg               ?= #fff
-button--default-border-color     ?= #777
+button--default-bg               ?= #eaeaea
+button--default-border-color     ?= #aaa
 
 button--transparent-color        ?= #656
 button--transparent-bg           ?= transparent
