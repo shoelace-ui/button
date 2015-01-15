@@ -4,20 +4,26 @@
 
 ## Usage
 
-```stylus
-@require 'shoelace-ui-button'
+  ```stylus
+  @require 'shoelace-ui-button'
 
-// `button` mixin example
+  // `button` mixin example
 
-.btn
-  button default
+  .btn
+    button default
 
-// opt out of defaults
+  // opt out of defaults
 
-button--placeholders-only = true
-button--apply-generic-selector-prefix ?= true
+  button--placeholders-only = true
+  button--apply-generic-selector-prefix ?= true
 
-```
+  ```
+
+## Usage
+
+  ```stylus
+  @require 'shoelace-ui-button'
+  ```
 
 ## License
 
